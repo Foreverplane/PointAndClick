@@ -9,6 +9,8 @@ public class ClientSystemsProvider : SystemsProvider {
 		yield return new Leopotam.EcsLite.UnityEditor.EcsWorldDebugSystem();
 	    #endif
 		yield return new TestSharedSystem();
+		yield return new CameraRaycastSystem();
+		yield return new MovementTargetSystem();
 	}
 
 }

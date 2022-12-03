@@ -1,5 +1,4 @@
 ﻿
-using Test.Systems;
 using Zenject;
 namespace PseudoServer {
 	internal class Program {
