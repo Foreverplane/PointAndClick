@@ -7,7 +7,7 @@ public class SceneContextInstaller : MonoInstaller {
 
 	public override void InstallBindings() {
 		Debug.Log("Install client bindings");
-		SignalBusInstaller.Install(Container);
+		
 		Container.BindInterfacesAndSelfTo<SceneView>().FromInstance(_SceneView).AsSingle();
 		var coreInstaller = new SharedInstaller();
 		coreInstaller.Install(Container,new ClientSystemsProvider(),new UnityLogger());

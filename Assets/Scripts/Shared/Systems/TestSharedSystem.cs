@@ -8,12 +8,12 @@ public class TestSharedSystem : IEcsInitSystem, IInitializable, IEcsRunSystem {
 	// 	_Logger.Log("System created");
 	// }
 	public void Init(IEcsSystems systems) {
-		_Logger?.Log("System initialized by ecs");
+		_Logger.Log("System initialized by ecs");
 	}
 	public void Initialize() {
-		_Logger?.Log("System initialized by zenject");
+		_Logger.Log("System initialized by zenject");
 	}
 	public void Run(IEcsSystems systems) {
-		_Logger?.Log("System run");
+		// _Logger.Log("System run");
 	}
 }
