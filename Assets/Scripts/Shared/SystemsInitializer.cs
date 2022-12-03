@@ -1,12 +1,14 @@
 ﻿using Leopotam.EcsLite;
-using UnityEngine;
 using Zenject;
 public class SystemsInitializer : IInitializable {
 
 	[Inject]
 	private EcsSystems _EcsSystems;
+
+	[Inject]
+	private Test.ILogger _Logger;
 	public void Initialize() {
-		Debug.Log("Systems initializer initialize");
+		_Logger.Log($"Try initialize {_EcsSystems.GetAllSystems().Count} systems");
 		_EcsSystems.Init();
 	}
 }

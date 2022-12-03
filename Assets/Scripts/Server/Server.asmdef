@@ -2,7 +2,8 @@
     "name": "Server",
     "rootNamespace": "Server",
     "references": [
-        "GUID:0207d9da55919df44894f131565bcc0e"
+        "GUID:0207d9da55919df44894f131565bcc0e",
+        "GUID:e59bf9fc7d5a44b18a819a92edd46163"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
