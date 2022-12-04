@@ -11,7 +11,7 @@ public class CameraRaycastSystem : IEcsRunSystem {
 		if (Input.GetMouseButtonDown(0)) {
 			Ray ray = _Camera.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast(ray, out var hit)) {
-				Debug.Log(hit.collider.gameObject.name);
+				// Debug.Log(hit.collider.gameObject.name);
 				EcsWorld world = systems.GetWorld();
 				var entity = world.NewEntity();
 				var cameraRaycastHits = world.GetPool<CameraRaycastHitComponent>();

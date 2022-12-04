@@ -13,7 +13,7 @@ public class GameObjectToEntityConverter : MonoBehaviour {
 
 	[Inject]
 	public void Construct(EcsWorld EcsWorld) {
-		Debug.Log($"Constructing: {gameObject.name}");
+		// Debug.Log($"Constructing: {gameObject.name}");
 		var entity = EcsWorld.NewEntity();
 		foreach (var authoring in _Authorings) {
 			authoring.AddComponent(entity, EcsWorld);

@@ -10,7 +10,7 @@ public class MovementTargetSystem : IEcsRunSystem {
 		var movableEntities = world.Filter<MoveableTag>().End();
 		foreach (var entity in cameraRaycastHits) {
 			ref var hitComponent = ref hitsPool.Get(entity);
-			Debug.Log($"Hit {JsonUtility.ToJson(hitComponent)} provide to: {movableEntities.GetEntitiesCount()} entities");
+			// Debug.Log($"Hit {JsonUtility.ToJson(hitComponent)} provide to: {movableEntities.GetEntitiesCount()} entities");
 			foreach (var movableEntity in movableEntities) {
 				if (!targetPointPool.Has(movableEntity)) {
 					targetPointPool.Add(movableEntity);

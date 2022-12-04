@@ -1,5 +1,5 @@
 ﻿using System;
 [Serializable]
 public struct TriggerResult {
-	public string EntityId;
+	public ValueType EntityId;
 }

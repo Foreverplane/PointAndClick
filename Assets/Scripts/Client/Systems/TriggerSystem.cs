@@ -31,11 +31,9 @@ public class TriggerSystem : IEcsRunSystem {
 					ref var triggerResult = ref triggerResultPool.Get(trigger);
 					ref var entityIdComponent = ref entityIdPool.Get(entity);
 					triggerResult.EntityId = entityIdComponent.Id;
-
 				}
 				else {
 					if (triggerResultPool.Has(trigger)) {
-						
 						triggerResultPool.Del(trigger);
 					}
 				}

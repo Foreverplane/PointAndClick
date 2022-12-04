@@ -9,11 +9,21 @@ public class ClientSystemsProvider : SystemsProvider {
 		yield return new Leopotam.EcsLite.UnityEditor.EcsWorldDebugSystem();
 	    #endif
 		yield return new TestSharedSystem();
+
 		yield return new CameraRaycastSystem();
 		yield return new MovementTargetSystem();
-		yield return new MovementSystem();
+		yield return new MovementDirectionSystem();
+		yield return new DeltaTimeSystem();
 		yield return new PositionDisplaySystem();
+		yield return new RotationDisplaySystem();
+		
+		
+		yield return new EntityIdMapSystem();
+		yield return new MovementSystem();
 		yield return new TriggerSystem();
+		yield return new RotateIfTriggeredSystem();
+		yield return new RotateToMovementDirectionSystem();
+		
 	}
 
 }

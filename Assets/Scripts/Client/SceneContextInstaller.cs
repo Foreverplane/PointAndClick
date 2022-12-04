@@ -21,9 +21,6 @@ public class SceneContextInstaller : MonoInstaller {
 		Container.Bind<Camera>().FromInstance(_Camera).AsSingle();
 		var coreInstaller = new SharedInstaller();
 		coreInstaller.Install(Container,new ClientSystemsProvider(),new UnityLogger());
-		
-		// foreach (var gameObjectToEntityConverter in _GameObjectToEntityConverter) {
-		// 	Container.Inject(gameObjectToEntityConverter);
-		// }
+
 	}
 }

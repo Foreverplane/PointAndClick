@@ -1,13 +1,13 @@
 ﻿using System;
+using UnityEngine;
 public class EntityIdAuthoring : GenericAuthoring<EntityIdComponent> {
 
 	private void OnValidate() {
-		Component.Id = Guid.NewGuid().ToString();
+		if (Component.Id == 0)
+			Component.Id = gameObject.GetInstanceID();
 	}
 
-}
-
-[Serializable]
-public struct EntityIdComponent {
-	public string Id;
+	protected override void OnAdded(EntityIdComponent component) {
+		// Debug.Log($"Entity with id: {component.Id} added to ecs world");
+	}
 }

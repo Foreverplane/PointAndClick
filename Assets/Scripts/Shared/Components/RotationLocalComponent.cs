@@ -1,6 +1,6 @@
 ﻿using System;
 using Unity.Mathematics;
 [Serializable]
-public struct RotationComponent {
+public struct RotationLocalComponent {
 	public quaternion Rotation;
 }

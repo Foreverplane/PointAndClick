@@ -7,13 +7,14 @@ public class SharedInstaller {
 		SignalBusInstaller.Install(container);
 		var world = new EcsWorld();
 		var systems = new EcsSystems(world);
+		container.BindInterfacesAndSelfTo<EntityIdMap>().AsSingle();
+		container.BindInterfacesAndSelfTo<TimeProvider>().AsSingle();
 		container.BindInterfacesAndSelfTo<Test.ILogger>().FromInstance(logger).AsSingle();
 		container.BindInterfacesAndSelfTo<EcsWorld>().FromInstance(world).AsSingle();
 		container.BindInterfacesAndSelfTo<EcsSystems>().FromInstance(systems).AsSingle();
 		container.Inject(systemsProvider);
 		systemsProvider.Provide();
 		container.BindInterfacesAndSelfTo<SystemsInitializer>().AsSingle();
-		container.BindInterfacesAndSelfTo<TimeProvider>().AsSingle();
 		container.BindInterfacesAndSelfTo<SystemsUpdater>().AsSingle();
 	}
 }
