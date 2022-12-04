@@ -11,6 +11,8 @@ public class ClientSystemsProvider : SystemsProvider {
 		yield return new TestSharedSystem();
 		yield return new CameraRaycastSystem();
 		yield return new MovementTargetSystem();
+		yield return new MovementSystem();
+		yield return new PositionDisplaySystem();
 	}
 
 }

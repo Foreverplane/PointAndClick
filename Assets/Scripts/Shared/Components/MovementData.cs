@@ -1,6 +1,9 @@
 
 
+using System;
 using Unity.Mathematics;
-public struct MovementComponent {
-	public float3 Direction;
+[Serializable]
+public struct MovementData {
+	public float MaxSpeed;
+	public float PositionThreshold;
 }
