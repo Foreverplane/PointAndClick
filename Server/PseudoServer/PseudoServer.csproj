@@ -1,0 +1,288 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>11</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Unity.Mathematics">
+        <HintPath>..\Unity.Mathematics.dll</HintPath>
+      </Reference>
+      <Reference Include="Zenject">
+        <HintPath>..\ZenjectNonUnity\Zenject.dll</HintPath>
+      </Reference>
+      <Reference Include="Zenject-Signals">
+        <HintPath>..\ZenjectNonUnity\Zenject-Signals.dll</HintPath>
+      </Reference>
+      <Reference Include="Zenject-usage">
+        <HintPath>..\ZenjectNonUnity\Zenject-usage.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Leopotam.EcsLite" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\Assets\Scripts\Server\Server.asmdef">
+        <Link>Server\Server.asmdef</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Server\Server.asmdef.meta">
+        <Link>Server\Server.asmdef.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Server\ServerInstaller.cs.meta">
+        <Link>Server\ServerInstaller.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Server\ServerLogger.cs.meta">
+        <Link>Server\ServerLogger.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Server\ServerSystemsProvider.cs.meta">
+        <Link>Server\ServerSystemsProvider.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components.meta">
+        <Link>Shared\Components.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\CameraRaycastHitComponent.cs.meta">
+        <Link>Shared\Components\CameraRaycastHitComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\ConnectedEntitiesComponent.cs.meta">
+        <Link>Shared\Components\ConnectedEntitiesComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\ConnectedEntityComponent.cs.meta">
+        <Link>Shared\Components\ConnectedEntityComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\EntityIdComponent.cs.meta">
+        <Link>Shared\Components\EntityIdComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\MoveableTag.cs.meta">
+        <Link>Shared\Components\MoveableTag.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\MovementData.cs.meta">
+        <Link>Shared\Components\MovementData.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\MoveToPointRequest.cs.meta">
+        <Link>Shared\Components\MoveToPointRequest.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\PositionComponent.cs.meta">
+        <Link>Shared\Components\PositionComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\RadiusComponent.cs.meta">
+        <Link>Shared\Components\RadiusComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\RotateTargetOnSourceTriggeredRequest.cs.meta">
+        <Link>Shared\Components\RotateTargetOnSourceTriggeredRequest.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\RotateToMovementDirectionRequest.cs.meta">
+        <Link>Shared\Components\RotateToMovementDirectionRequest.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\RotationData.cs.meta">
+        <Link>Shared\Components\RotationData.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\RotationLocalComponent.cs.meta">
+        <Link>Shared\Components\RotationLocalComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\TriggerRequest.cs.meta">
+        <Link>Shared\Components\TriggerRequest.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\TriggerResult.cs.meta">
+        <Link>Shared\Components\TriggerResult.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\TriggerTag.cs.meta">
+        <Link>Shared\Components\TriggerTag.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Components\VelocityComponent.cs.meta">
+        <Link>Shared\Components\VelocityComponent.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\EntityIdMap.cs.meta">
+        <Link>Shared\EntityIdMap.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\ILogger.cs.meta">
+        <Link>Shared\ILogger.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\MathExtensions.cs.meta">
+        <Link>Shared\MathExtensions.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Shared.asmdef">
+        <Link>Shared\Shared.asmdef</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Shared.asmdef.meta">
+        <Link>Shared\Shared.asmdef.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\SharedInstaller.cs.meta">
+        <Link>Shared\SharedInstaller.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\SharedSystemsProvider.cs.meta">
+        <Link>Shared\SharedSystemsProvider.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems.meta">
+        <Link>Shared\Systems.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\SystemsInitializer.cs.meta">
+        <Link>Shared\SystemsInitializer.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\SystemsProvider.cs.meta">
+        <Link>Shared\SystemsProvider.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\SystemsUpdater.cs.meta">
+        <Link>Shared\SystemsUpdater.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\CalculateVelocitySystem.cs.meta">
+        <Link>Shared\Systems\CalculateVelocitySystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\DeltaTimeSystem.cs.meta">
+        <Link>Shared\Systems\DeltaTimeSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\EntityIdMapSystem.cs.meta">
+        <Link>Shared\Systems\EntityIdMapSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\MovementDirectionSystem.cs.meta">
+        <Link>Shared\Systems\MovementDirectionSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\MovementSystem.cs.meta">
+        <Link>Shared\Systems\MovementSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\MovementTargetSystem.cs.meta">
+        <Link>Shared\Systems\MovementTargetSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\RotateIfTriggeredSystem.cs.meta">
+        <Link>Shared\Systems\RotateIfTriggeredSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\RotateToMovementDirectionSystem.cs.meta">
+        <Link>Shared\Systems\RotateToMovementDirectionSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\TestSharedSystem.cs.meta">
+        <Link>Shared\Systems\TestSharedSystem.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\TimeProvider.cs.meta">
+        <Link>Shared\Systems\TimeProvider.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Systems\TriggerSystem.cs.meta">
+        <Link>Shared\Systems\TriggerSystem.cs.meta</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\..\Assets\Scripts\Server\ServerInstaller.cs">
+        <Link>Server\ServerInstaller.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Server\ServerLogger.cs">
+        <Link>Server\ServerLogger.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Server\ServerSystemsProvider.cs">
+        <Link>Server\ServerSystemsProvider.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\CameraRaycastHitComponent.cs">
+        <Link>Shared\Components\CameraRaycastHitComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\ConnectedEntitiesComponent.cs">
+        <Link>Shared\Components\ConnectedEntitiesComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\ConnectedEntityComponent.cs">
+        <Link>Shared\Components\ConnectedEntityComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\EntityIdComponent.cs">
+        <Link>Shared\Components\EntityIdComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\MoveableTag.cs">
+        <Link>Shared\Components\MoveableTag.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\MovementData.cs">
+        <Link>Shared\Components\MovementData.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\MoveToPointRequest.cs">
+        <Link>Shared\Components\MoveToPointRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\PositionComponent.cs">
+        <Link>Shared\Components\PositionComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\RadiusComponent.cs">
+        <Link>Shared\Components\RadiusComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\RotateTargetOnSourceTriggeredRequest.cs">
+        <Link>Shared\Components\RotateTargetOnSourceTriggeredRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\RotateToMovementDirectionRequest.cs">
+        <Link>Shared\Components\RotateToMovementDirectionRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\RotationData.cs">
+        <Link>Shared\Components\RotationData.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\RotationLocalComponent.cs">
+        <Link>Shared\Components\RotationLocalComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\TriggerRequest.cs">
+        <Link>Shared\Components\TriggerRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\TriggerResult.cs">
+        <Link>Shared\Components\TriggerResult.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\TriggerTag.cs">
+        <Link>Shared\Components\TriggerTag.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Components\VelocityComponent.cs">
+        <Link>Shared\Components\VelocityComponent.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\EntityIdMap.cs">
+        <Link>Shared\EntityIdMap.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\ILogger.cs">
+        <Link>Shared\ILogger.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\MathExtensions.cs">
+        <Link>Shared\MathExtensions.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\SharedInstaller.cs">
+        <Link>Shared\SharedInstaller.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\SharedSystemsProvider.cs">
+        <Link>Shared\SharedSystemsProvider.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\SystemsInitializer.cs">
+        <Link>Shared\SystemsInitializer.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\SystemsProvider.cs">
+        <Link>Shared\SystemsProvider.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\SystemsUpdater.cs">
+        <Link>Shared\SystemsUpdater.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\CalculateVelocitySystem.cs">
+        <Link>Shared\Systems\CalculateVelocitySystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\DeltaTimeSystem.cs">
+        <Link>Shared\Systems\DeltaTimeSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\EntityIdMapSystem.cs">
+        <Link>Shared\Systems\EntityIdMapSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\MovementDirectionSystem.cs">
+        <Link>Shared\Systems\MovementDirectionSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\MovementSystem.cs">
+        <Link>Shared\Systems\MovementSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\MovementTargetSystem.cs">
+        <Link>Shared\Systems\MovementTargetSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\RotateIfTriggeredSystem.cs">
+        <Link>Shared\Systems\RotateIfTriggeredSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\RotateToMovementDirectionSystem.cs">
+        <Link>Shared\Systems\RotateToMovementDirectionSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\TestSharedSystem.cs">
+        <Link>Shared\Systems\TestSharedSystem.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\TimeProvider.cs">
+        <Link>Shared\Systems\TimeProvider.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Systems\TriggerSystem.cs">
+        <Link>Shared\Systems\TriggerSystem.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+</Project>

@@ -8,10 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4689228a-66b0-40a9-8cdf-7a4428224ab0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Client/ClientSystemsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Client/ClientSystemsProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Client/SceneContextInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Client/SceneContextInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PseudoServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PseudoServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Assets/Scripts/Shared/Systems/TestSharedSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Assets/Scripts/Shared/Systems/TimeProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net5.0-windows/PseudoServer.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af093c5400d84132a3a28f4f0ec68ffd41e00/0f/7960de8e/InstallerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/af093c5400d84132a3a28f4f0ec68ffd41e00/2b/e1b8322b/Kernel.cs" root0="SKIP_HIGHLIGHTING" />
@@ -83,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670079113957</updated>
       <workItem from="1670079119680" duration="5839000" />
+      <workItem from="1670175483904" duration="672000" />
     </task>
     <servers />
   </component>
