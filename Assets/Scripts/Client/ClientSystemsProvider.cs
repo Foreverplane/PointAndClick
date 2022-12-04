@@ -13,6 +13,7 @@ public class ClientSystemsProvider : SystemsProvider {
 		yield return new MovementTargetSystem();
 		yield return new MovementSystem();
 		yield return new PositionDisplaySystem();
+		yield return new TriggerSystem();
 	}
 
 }
