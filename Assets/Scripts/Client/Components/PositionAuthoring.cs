@@ -2,6 +2,6 @@
 using UnityEngine;
 public class PositionAuthoring : GenericAuthoring<PositionComponent> {
 	private void OnValidate() {
-		Component.Position = transform.position;
+		Component.Value = transform.position;
 	}
 }

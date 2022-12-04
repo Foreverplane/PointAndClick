@@ -1,6 +1,6 @@
 ﻿using Leopotam.EcsLite;
 using Unity.Mathematics;
-public class PositionDisplaySystem : IEcsRunSystem {
+public class DisplayPositionSystem : IEcsRunSystem {
 
 	public void Run(IEcsSystems systems) {
 		
@@ -11,12 +11,12 @@ public class PositionDisplaySystem : IEcsRunSystem {
 		foreach (var entity in entities) {
 			ref var pos = ref positions.Get(entity);
 			ref var transformRef = ref transform.Get(entity);
-			transformRef.Transform.position = pos.Position;
+			transformRef.Transform.position = pos.Value;
 		}
 	}
 }
 
-public class RotationDisplaySystem : IEcsRunSystem {
+public class DisplayRotationSystem : IEcsRunSystem {
 
 	public void Run(IEcsSystems systems) {
 		

@@ -14,7 +14,7 @@ public class MovementDirectionSystem : IEcsRunSystem {
 				var position = positionPool.Get(entity);
 				ref var directionComponent = ref requestPool.Get(entity);
 				
-				directionComponent.Direction = math.normalize(targetPointComponent.TargetPoint - position.Position);
+				directionComponent.Direction = math.normalize(targetPointComponent.TargetPoint - position.Value);
 			}
 		}
 	}

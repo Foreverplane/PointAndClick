@@ -16,7 +16,7 @@ public class TriggerSystem : IEcsRunSystem {
 			foreach (var trigger in triggers) {
 				var triggerPosition = positionsPool.Get(trigger);
 				var triggerRadius = radiusPool.Get(trigger);
-				var distance = math.distance(entityPosition.Position, triggerPosition.Position);
+				var distance = math.distance(entityPosition.Value, triggerPosition.Value);
 				if (distance < triggerRadius.Radius) {
 					if (!triggerResultPool.Has(entity)) {
 						triggerResultPool.Add(entity);

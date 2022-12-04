@@ -14,8 +14,9 @@ public class ClientSystemsProvider : SystemsProvider {
 		yield return new MovementTargetSystem();
 		yield return new MovementDirectionSystem();
 		yield return new DeltaTimeSystem();
-		yield return new PositionDisplaySystem();
-		yield return new RotationDisplaySystem();
+		yield return new DisplayPositionSystem();
+		yield return new DisplayRotationSystem();
+		yield return new DisplayMovementAnimationSystem();
 		
 		
 		yield return new EntityIdMapSystem();
@@ -23,7 +24,8 @@ public class ClientSystemsProvider : SystemsProvider {
 		yield return new TriggerSystem();
 		yield return new RotateIfTriggeredSystem();
 		yield return new RotateToMovementDirectionSystem();
-		
+		yield return new CalculateVelocitySystem();
+
 	}
 
 }

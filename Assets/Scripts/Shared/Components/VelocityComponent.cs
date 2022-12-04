@@ -1,6 +1,7 @@
 ﻿using System;
 using Unity.Mathematics;
 [Serializable]
-public struct PositionComponent {
+public struct VelocityComponent {
 	public float3 Value;
+	public float3 LastPosition;
 }

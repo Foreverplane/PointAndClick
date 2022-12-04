@@ -1,7 +1,7 @@
 ﻿using Leopotam.EcsLite;
 using UnityEngine;
 
-
+[DisallowMultipleComponent]
 public class GenericAuthoring<TComponent> : Authoring where TComponent : struct {
 	[SerializeField]
 	protected TComponent Component;

@@ -1,8 +1,10 @@
 ﻿using Leopotam.EcsLite;
 using Unity.Mathematics;
-using UnityEngine;
+using Zenject;
 public class MovementSystem : IEcsRunSystem {
 
+	[Inject]
+	private TimeProvider _TimeProvider;
 	public void Run(IEcsSystems systems) {
 		var world = systems.GetWorld();
 		var requests = world.GetPool<MoveToPointRequest>();
@@ -13,9 +15,10 @@ public class MovementSystem : IEcsRunSystem {
 			ref var pos = ref positions.Get(movableEntity);
 			ref var move = ref moveData.Get(movableEntity);
 			var targetPoint = requests.Get(movableEntity).TargetPoint;
-			var direction = targetPoint - pos.Position;
+			var direction = targetPoint - pos.Value;
 			var normalized = math.normalize(direction);
-			pos.Position += move.MaxSpeed * Time.deltaTime * normalized;
+
+			pos.Value += move.MaxSpeed * _TimeProvider.RealDeltaTime * normalized;
 			if (math.length(direction) < move.PositionThreshold) {
 				requests.Del(movableEntity);
 			}
