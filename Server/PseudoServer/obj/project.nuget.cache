@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ld4ORB7wiRnyWs3ezzSLMKgI9LGHEGSor2LzoO3H8A2RfVlPqNlOSCK9Lf/hoXtBoYPkWr/FjNoICpJlRHqSsQ==",
+  "dgSpecHash": "pzpQNRgRPTKSsa9MDu85/ftQMor2ft45iesIuU1HxyLlR/EB0us6k3Vq5aTIxded4Ct1QwSK0L5K7eJteOzbsw==",
   "success": true,
   "projectFilePath": "C:\\Repository\\PointAndClick\\Server\\PseudoServer\\PseudoServer.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\forev\\.nuget\\packages\\leopotam.ecslite\\1.0.0\\leopotam.ecslite.1.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

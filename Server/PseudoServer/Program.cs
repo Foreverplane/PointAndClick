@@ -4,9 +4,10 @@ namespace PseudoServer {
 	internal class Program {
 		
 		public static void Main(string[] args) {
-			Console.WriteLine("Server start!");
-			var container = new DiContainer();
-			container.Settings = ZenjectSettings.Default;
+			Console.WriteLine("Server starting!");
+			var container = new DiContainer {
+				Settings = ZenjectSettings.Default
+			};
 			ZenjectManagersInstaller.Install(container);
 			container.Bind<Kernel>().AsSingle();
 			container.Install<ServerInstaller>();

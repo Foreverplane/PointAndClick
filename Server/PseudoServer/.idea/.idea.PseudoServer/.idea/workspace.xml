@@ -8,11 +8,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4689228a-66b0-40a9-8cdf-7a4428224ab0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/PseudoServer.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Footstep_10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Land.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Character/Sfx/Player_Land.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Client/Empty.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Client/Empty.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Client/UnityLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Client/Core/UnityLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Client/UnityLogger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Client/Core/UnityLogger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/EntityIdMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/EntityIdMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/EntityIdMap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/EntityIdMap.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/ILogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/ILogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/ILogger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/ILogger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/MathExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/MathExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/MathExtensions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/MathExtensions.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/SystemsInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/SystemsInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/SystemsInitializer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/SystemsInitializer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/SystemsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/SystemsProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/SystemsProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/SystemsProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/SystemsUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/SystemsUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/Shared/SystemsUpdater.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/Shared/Core/SystemsUpdater.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Client.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PseudoServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PseudoServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PseudoServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PseudoServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/PseudoServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/PseudoServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/PseudoServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/PseudoServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/PseudoServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/PseudoServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/PseudoServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Shared.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +65,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Assets/Scripts/Server/ServerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Assets/Scripts/Shared/Systems/TestSharedSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Assets/Scripts/Shared/Systems/TimeProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/net5.0-windows/PseudoServer.GlobalUsings.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,7 +132,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670079113957</updated>
       <workItem from="1670079119680" duration="5839000" />
-      <workItem from="1670175483904" duration="672000" />
+      <workItem from="1670175483904" duration="1035000" />
+      <workItem from="1670185212883" duration="164000" />
     </task>
     <servers />
   </component>

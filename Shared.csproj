@@ -42,19 +42,23 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Shared\Systems\TimeProvider.cs" />
-     <Compile Include="Assets\Scripts\Shared\SystemsUpdater.cs" />
+     <Compile Include="Assets\Scripts\Shared\Core\SystemsUpdater.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\ConnectedEntitiesComponent.cs" />
-     <Compile Include="Assets\Scripts\Shared\SystemsProvider.cs" />
+     <Compile Include="Assets\Scripts\Shared\Core\SystemsProvider.cs" />
+     <Compile Include="Assets\Scripts\Shared\Core\MathExtensions.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\MovementData.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\RadiusComponent.cs" />
-     <Compile Include="Assets\Scripts\Shared\EntityIdMap.cs" />
+     <Compile Include="Assets\Scripts\Shared\Core\EntityIdMap.cs" />
+     <Compile Include="Assets\Scripts\Shared\Components\VelocityComponent.cs" />
+     <Compile Include="Assets\Scripts\Shared\SharedSystemsProvider.cs" />
      <Compile Include="Assets\Scripts\Shared\Systems\DeltaTimeSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\RotateTargetOnSourceTriggeredRequest.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\RotationLocalComponent.cs" />
+     <Compile Include="Assets\Scripts\Shared\Systems\CalculateVelocitySystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Systems\MovementSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\TriggerResult.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\EntityIdComponent.cs" />
-     <Compile Include="Assets\Scripts\Shared\SystemsInitializer.cs" />
+     <Compile Include="Assets\Scripts\Shared\Core\SystemsInitializer.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\CameraRaycastHitComponent.cs" />
      <Compile Include="Assets\Scripts\Shared\Systems\TestSharedSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Systems\TriggerSystem.cs" />
@@ -62,21 +66,17 @@
      <Compile Include="Assets\Scripts\Shared\Systems\EntityIdMapSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\SharedInstaller.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\PositionComponent.cs" />
-     <Compile Include="Assets\Scripts\Shared\ILogger.cs" />
+     <Compile Include="Assets\Scripts\Shared\Core\ILogger.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\RotationData.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\MoveToPointRequest.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\MoveableTag.cs" />
+     <Compile Include="Assets\Scripts\Shared\Components\RotateToMovementDirectionRequest.cs" />
+     <Compile Include="Assets\Scripts\Shared\Systems\RotateToMovementDirectionSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Systems\MovementTargetSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\ConnectedEntityComponent.cs" />
      <Compile Include="Assets\Scripts\Shared\Components\TriggerRequest.cs" />
-     <Compile Include="Assets\Scripts\Shared\Components\TriggerTag.cs" />
-     <Compile Include="Assets\Scripts\Shared\Components\RotateToMovementDirectionRequest.cs" />
-     <Compile Include="Assets\Scripts\Shared\Systems\RotateToMovementDirectionSystem.cs" />
      <Compile Include="Assets\Scripts\Shared\Systems\MovementDirectionSystem.cs" />
-     <Compile Include="Assets\Scripts\Shared\MathExtensions.cs" />
-     <Compile Include="Assets\Scripts\Shared\Components\VelocityComponent.cs" />
-     <Compile Include="Assets\Scripts\Shared\SharedSystemsProvider.cs" />
-     <Compile Include="Assets\Scripts\Shared\Systems\CalculateVelocitySystem.cs" />
+     <Compile Include="Assets\Scripts\Shared\Components\TriggerTag.cs" />
      <None Include="Assets\Scripts\Shared\Shared.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

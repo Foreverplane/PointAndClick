@@ -97,14 +97,26 @@
       <Content Include="..\..\Assets\Scripts\Shared\Components\VelocityComponent.cs.meta">
         <Link>Shared\Components\VelocityComponent.cs.meta</Link>
       </Content>
-      <Content Include="..\..\Assets\Scripts\Shared\EntityIdMap.cs.meta">
-        <Link>Shared\EntityIdMap.cs.meta</Link>
+      <Content Include="..\..\Assets\Scripts\Shared\Core.meta">
+        <Link>Shared\Core.meta</Link>
       </Content>
-      <Content Include="..\..\Assets\Scripts\Shared\ILogger.cs.meta">
-        <Link>Shared\ILogger.cs.meta</Link>
+      <Content Include="..\..\Assets\Scripts\Shared\Core\EntityIdMap.cs.meta">
+        <Link>Shared\Core\EntityIdMap.cs.meta</Link>
       </Content>
-      <Content Include="..\..\Assets\Scripts\Shared\MathExtensions.cs.meta">
-        <Link>Shared\MathExtensions.cs.meta</Link>
+      <Content Include="..\..\Assets\Scripts\Shared\Core\ILogger.cs.meta">
+        <Link>Shared\Core\ILogger.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Core\MathExtensions.cs.meta">
+        <Link>Shared\Core\MathExtensions.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Core\SystemsInitializer.cs.meta">
+        <Link>Shared\Core\SystemsInitializer.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Core\SystemsProvider.cs.meta">
+        <Link>Shared\Core\SystemsProvider.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Assets\Scripts\Shared\Core\SystemsUpdater.cs.meta">
+        <Link>Shared\Core\SystemsUpdater.cs.meta</Link>
       </Content>
       <Content Include="..\..\Assets\Scripts\Shared\Shared.asmdef">
         <Link>Shared\Shared.asmdef</Link>
@@ -120,15 +132,6 @@
       </Content>
       <Content Include="..\..\Assets\Scripts\Shared\Systems.meta">
         <Link>Shared\Systems.meta</Link>
-      </Content>
-      <Content Include="..\..\Assets\Scripts\Shared\SystemsInitializer.cs.meta">
-        <Link>Shared\SystemsInitializer.cs.meta</Link>
-      </Content>
-      <Content Include="..\..\Assets\Scripts\Shared\SystemsProvider.cs.meta">
-        <Link>Shared\SystemsProvider.cs.meta</Link>
-      </Content>
-      <Content Include="..\..\Assets\Scripts\Shared\SystemsUpdater.cs.meta">
-        <Link>Shared\SystemsUpdater.cs.meta</Link>
       </Content>
       <Content Include="..\..\Assets\Scripts\Shared\Systems\CalculateVelocitySystem.cs.meta">
         <Link>Shared\Systems\CalculateVelocitySystem.cs.meta</Link>
@@ -226,29 +229,29 @@
       <Compile Include="..\..\Assets\Scripts\Shared\Components\VelocityComponent.cs">
         <Link>Shared\Components\VelocityComponent.cs</Link>
       </Compile>
-      <Compile Include="..\..\Assets\Scripts\Shared\EntityIdMap.cs">
-        <Link>Shared\EntityIdMap.cs</Link>
+      <Compile Include="..\..\Assets\Scripts\Shared\Core\EntityIdMap.cs">
+        <Link>Shared\Core\EntityIdMap.cs</Link>
       </Compile>
-      <Compile Include="..\..\Assets\Scripts\Shared\ILogger.cs">
-        <Link>Shared\ILogger.cs</Link>
+      <Compile Include="..\..\Assets\Scripts\Shared\Core\ILogger.cs">
+        <Link>Shared\Core\ILogger.cs</Link>
       </Compile>
-      <Compile Include="..\..\Assets\Scripts\Shared\MathExtensions.cs">
-        <Link>Shared\MathExtensions.cs</Link>
+      <Compile Include="..\..\Assets\Scripts\Shared\Core\MathExtensions.cs">
+        <Link>Shared\Core\MathExtensions.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Core\SystemsInitializer.cs">
+        <Link>Shared\Core\SystemsInitializer.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Core\SystemsProvider.cs">
+        <Link>Shared\Core\SystemsProvider.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Assets\Scripts\Shared\Core\SystemsUpdater.cs">
+        <Link>Shared\Core\SystemsUpdater.cs</Link>
       </Compile>
       <Compile Include="..\..\Assets\Scripts\Shared\SharedInstaller.cs">
         <Link>Shared\SharedInstaller.cs</Link>
       </Compile>
       <Compile Include="..\..\Assets\Scripts\Shared\SharedSystemsProvider.cs">
         <Link>Shared\SharedSystemsProvider.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Assets\Scripts\Shared\SystemsInitializer.cs">
-        <Link>Shared\SystemsInitializer.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Assets\Scripts\Shared\SystemsProvider.cs">
-        <Link>Shared\SystemsProvider.cs</Link>
-      </Compile>
-      <Compile Include="..\..\Assets\Scripts\Shared\SystemsUpdater.cs">
-        <Link>Shared\SystemsUpdater.cs</Link>
       </Compile>
       <Compile Include="..\..\Assets\Scripts\Shared\Systems\CalculateVelocitySystem.cs">
         <Link>Shared\Systems\CalculateVelocitySystem.cs</Link>
