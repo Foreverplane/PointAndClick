@@ -4,33 +4,45 @@ public class TriggerSystem : IEcsRunSystem {
 
 	public void Run(IEcsSystems systems) {
 		var world = systems.GetWorld();
-		var positions = world.GetPool<PositionComponent>();
-		var radius = world.GetPool<RadiusComponent>();
-		var triggerResult = world.GetPool<TriggerResult>();
-		var entityId = world.GetPool<EntityIdComponent>();
+		var positionsPool = world.GetPool<PositionComponent>();
+		var radiusPool = world.GetPool<RadiusComponent>();
+		var triggerResultPool = world.GetPool<TriggerResult>();
+		var entityIdPool = world.GetPool<EntityIdComponent>();
 		var triggers = world.Filter<TriggerTag>().Inc<RadiusComponent>().Inc<PositionComponent>().Inc<EntityIdComponent>().End();
 		var entities = world.Filter<TriggerRequest>().Inc<PositionComponent>().End();
 		foreach (var entity in entities) {
-			var entityPosition = positions.Get(entity);
-			bool isDirty = false;
+			var entityPosition = positionsPool.Get(entity);
+			bool isEntityTriggerDirty = false;
 			foreach (var trigger in triggers) {
-				var triggerPosition = positions.Get(trigger);
-				var triggerRadius = radius.Get(trigger);
+				var triggerPosition = positionsPool.Get(trigger);
+				var triggerRadius = radiusPool.Get(trigger);
 				var distance = math.distance(entityPosition.Position, triggerPosition.Position);
 				if (distance < triggerRadius.Radius) {
-					if (!triggerResult.Has(entity)) {
-						triggerResult.Add(entity);
+					if (!triggerResultPool.Has(entity)) {
+						triggerResultPool.Add(entity);
 					}
-					ref var result = ref triggerResult.Get(entity);
-					var id = entityId.Get(trigger);
-					result.EntityId = id.Id;
-					isDirty = true;
-					break;
+					ref var entityTriggerResult = ref triggerResultPool.Get(entity);
+					var triggerId = entityIdPool.Get(trigger);
+					entityTriggerResult.EntityId = triggerId.Id;
+					isEntityTriggerDirty = true;
+					if (!triggerResultPool.Has(trigger)) {
+						triggerResultPool.Add(trigger);
+					}
+					ref var triggerResult = ref triggerResultPool.Get(trigger);
+					ref var entityIdComponent = ref entityIdPool.Get(entity);
+					triggerResult.EntityId = entityIdComponent.Id;
+
+				}
+				else {
+					if (triggerResultPool.Has(trigger)) {
+						
+						triggerResultPool.Del(trigger);
+					}
 				}
 			}
-			if (!isDirty) {
-				if (triggerResult.Has(entity)) {
-					triggerResult.Del(entity);
+			if (!isEntityTriggerDirty) {
+				if (triggerResultPool.Has(entity)) {
+					triggerResultPool.Del(entity);
 				}
 			}
 		}
