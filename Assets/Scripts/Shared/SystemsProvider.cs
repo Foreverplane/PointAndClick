@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using Leopotam.EcsLite;
 using Test;
 using Zenject;
@@ -22,6 +23,7 @@ public abstract class SystemsProvider {
 			_Systems.Add(o);
 		}
 	}
-	protected abstract IEnumerable CollectSystems();
+	public abstract IEnumerable<IEcsSystem> CollectSystems();
 
+	
 }

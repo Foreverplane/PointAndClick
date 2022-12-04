@@ -67,6 +67,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerArmature
       objectReference: {fileID: 0}
+    - target: {fileID: 3228351256266027168, guid: b2889d0cb6ff75740a76ddb3480ea6be,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2889d0cb6ff75740a76ddb3480ea6be, type: 3}
 --- !u!95 &6982812148065460682 stripped
@@ -147,7 +152,8 @@ PrefabInstance:
       propertyPath: Component.Id
       value: 29338
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1623531601510123926, guid: 696df83c92c3a354ca93b1b68e2aa80f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 696df83c92c3a354ca93b1b68e2aa80f, type: 3}
 --- !u!114 &2260468898223724502 stripped
 MonoBehaviour:
